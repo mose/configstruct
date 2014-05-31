@@ -28,7 +28,7 @@ class ConfigStruct < OpenStruct
   end
 
   def setup
-    write {}
+    write Hash.new
   end
 
   def default(var, value)
