@@ -1,10 +1,8 @@
 require 'ostruct'
-require 'cliprompt'
+
+require_relative 'version'
 
 class ConfigStruct < OpenStruct
-  include Cliprompt
-
-  VERSION = "0.0.1"
 
   def initialize(options = nil, input = STDIN, output = STDOUT)
     super(options)
@@ -14,8 +12,8 @@ class ConfigStruct < OpenStruct
   end
 
   def set_defaults
-    self.basedir ||= '/tmp'
-    self.basefile ||= File.join(self.basedir, 'config.yml')
+    default :basedir, '/tmp'
+    default :basefile, File.join(self.basedir, 'config.yml')
   end
 
   def prepare_dirs
@@ -31,6 +29,11 @@ class ConfigStruct < OpenStruct
   end
 
   def setup
+    write {}
+  end
+
+  def default(var, value)
+    send(var).nil? && send("#{var}=", value)
   end
 
   def write(values)

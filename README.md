@@ -11,7 +11,7 @@ Configstruct
 
 This gem is a lib for managing configfile for cli applications, including
 
-- setup of the config file if it does not exist, using cli prompt
+- call a setup of the config file if it does not exist
 - edit configuration and update the config file
 
 It's for now totally experimental, please do not use yet.
@@ -25,28 +25,27 @@ Add this line to your application's Gemfile:
 ## Usage
 
 ````ruby
+require 'cliprompt'
 class Config < ConfigStruct
+
+  include Cliprompt
 
   def set_defaults
     super
-    self.name ||= 'default'
-    self.url ||= 'http://hackpad.com'
+    default :name, 'default'
+    default :url, 'http://greenruby.org'
   end
 
   def setup
     values = {}
-    output.puts Paint['Workspace configuration.', :blue]
-    output.puts Paint['Gather your information from https://<workspace>.hackpad.com/ep/account/settings/', :bold]
-    values['client_id'] = guess 'HPCLI_CLIENTID', 'What is your Client ID?'
-    values['secret'] = guess 'HPCLI_SECRET', 'What is your Secret Key?'
-    values['site'] = guess('HPCLI_URL', 'What is the URI of your workspace? (ex. https://xxx.hackapd.com)').gsub(/\/$/, '')
-    write(values)
+    output.puts Paint['Applicaton configuration.', :blue]
+    values['api_id'] = guess 'API_CLIENT', 'What is your Client ID?'
+    values['api_secret'] = guess 'API_SECRET', 'What is your Secret Key?'
+    write values
   end
 
 end
 ````
-
-
 
 ## Contributing
 
