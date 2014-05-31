@@ -1,6 +1,5 @@
 require 'ostruct'
-
-require_relative 'version'
+require 'yaml'
 
 class ConfigStruct < OpenStruct
 
