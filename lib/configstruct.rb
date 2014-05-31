@@ -5,6 +5,8 @@ class ConfigStruct < OpenStruct
 
   def initialize(options = nil, input = STDIN, output = STDOUT)
     super(options)
+    @input = input
+    @output = output
     set_defaults
     prepare_dirs
     addvalues
@@ -39,6 +41,22 @@ class ConfigStruct < OpenStruct
     File.open(self.basefile, 'w') do |f|
       f.write YAML.dump(values)
     end
+  end
+
+  def puts(*string)
+    @output.puts *string
+  end
+
+  def print(*string)
+    @output.print *string
+  end
+
+  def printf(string, *args)
+    @output.printf string, *args
+  end
+
+  def gets(*args)
+    @input.gets *args
   end
 
 end

@@ -1,8 +1,10 @@
 ConfigStruct Changelog
 =======================
 
-v0.0.3 - wip
+v0.0.3 - 2014-06-01
 -----------------------
+
+- add StringIO override for purpose of being used on setup and testing
 
 v0.0.2 - 2014-05-31
 -----------------------
