@@ -1,12 +1,9 @@
 ConfigStruct Changelog
 =======================
 
-v0.0.1 - wip
+v0.0.1 - 2014-05-31
 -----------------------
 
+- basic test coverage
 - base structure
 
-v0.22.11 - wip
------------------------
-
-- base structure
