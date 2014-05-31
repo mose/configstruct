@@ -3,7 +3,7 @@ Configstruct
 
 [![Gem Version](https://badge.fury.io/rb/configstruct.png)](http://rubygems.org/gems/configstruct)
 [![Build Status](https://travis-ci.org/mose/configstruct.png?branch=master)](https://travis-ci.org/mose/configstruct)
-[![Coverage Status](https://coveralls.io/repos/mose/configstruct/badge.png)](https://coveralls.io/r/mose/configstruct)
+[![Coverage Status](https://img.shields.io/coveralls/mose/configstruct.svg)](https://coveralls.io/r/mose/configstruct?branch=master)
 [![Dependency Status](https://gemnasium.com/mose/configstruct.svg)](https://gemnasium.com/mose/configstruct)
 [![Code Climate](https://codeclimate.com/github/mose/configstruct.png)](https://codeclimate.com/github/mose/configstruct)
 
