@@ -1,11 +1,11 @@
 Configstruct
 =============
 
-[![Gem Version](https://badge.fury.io/rb/configstruct.png)](http://rubygems.org/gems/configstruct)
-[![Build Status](https://travis-ci.org/mose/configstruct.png?branch=master)](https://travis-ci.org/mose/configstruct)
+[![Gem Version](https://img.shields.io/gem/v/configstruct.svg)](http://rubygems.org/gems/configstruct)
+[![Build Status](https://img.shields.io/travis/mose/configstruct.svg)](https://travis-ci.org/mose/configstruct)
 [![Coverage Status](https://img.shields.io/coveralls/mose/configstruct.svg)](https://coveralls.io/r/mose/configstruct?branch=master)
-[![Dependency Status](https://gemnasium.com/mose/configstruct.svg)](https://gemnasium.com/mose/configstruct)
-[![Code Climate](https://codeclimate.com/github/mose/configstruct.png)](https://codeclimate.com/github/mose/configstruct)
+[![Dependency Status](https://img.shields.io/gemnasium/mose/configstruct.svg)](https://gemnasium.com/mose/configstruct)
+[![Code Climate](https://img.shields.io/codeclimate/github/mose/configstruct.svg)](https://codeclimate.com/github/mose/configstruct)
 
 ----
 
