@@ -3,10 +3,11 @@ require 'yaml'
 
 class ConfigStruct < OpenStruct
 
-  def initialize(options = nil, input = STDIN, output = STDOUT)
+  def initialize(options = nil, input = STDIN, output = STDOUT, unless_set = false)
     super(options)
     @input = input
     @output = output
+    @unless_set = unless_set
     set_defaults
     prepare_dirs
     addvalues
@@ -24,8 +25,10 @@ class ConfigStruct < OpenStruct
   def addvalues
     setup unless File.exist? self.basefile
     YAML.load_file(self.basefile).each do |k, v|
-      new_ostruct_member(k)
-      send("#{k}=", v)
+      unless @unless_set && defined? self[v]
+        new_ostruct_member(k)
+        send("#{k}=", v)
+      end
     end
   end
 
