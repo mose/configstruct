@@ -23,7 +23,7 @@ describe ConfigStruct do
       subject { ConfigStruct.new options }
       it 'then a config file is created calling' do
         expect(subject.basefile).to eq basefile
-        expect(File.exist? basefile).to be_true
+        expect(File.exist? basefile).to be_truthy
       end
     end
   end
@@ -47,7 +47,7 @@ describe ConfigStruct do
         expect(output.string).to eq "-- #{str} --"
       end
       it 'redirect gets to StringIO object' do
-        input.stub(:gets).and_return(str)
+        allow(input).to receive(:gets).and_return(str)
         expect(subject.gets).to eq str
       end
     end

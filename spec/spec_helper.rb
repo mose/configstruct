@@ -12,9 +12,6 @@ if ENV['COV']
 else
   require 'coveralls'
   Coveralls.wear!
-
-  # require "codeclimate-test-reporter"
-  # CodeClimate::TestReporter.start
 end
 
 RSpec.configure do |config|
