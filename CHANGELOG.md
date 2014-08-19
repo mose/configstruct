@@ -6,7 +6,7 @@ v0.0.5 - wip
 
 v0.0.4 - 2014-08-19
 -----------------------
-- add a furth params at init for conductig the behaviour of overriding values from options provided
+- add a fourth params at init for conductig the behaviour of overriding values from options provided
 
 v0.0.3 - 2014-06-01
 -----------------------
