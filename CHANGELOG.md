@@ -3,6 +3,7 @@ ConfigStruct Changelog
 
 v0.0.5 - wip
 ----------------------
+- fix tests for rspec3
 
 v0.0.4 - 2014-08-19
 -----------------------
