@@ -7,6 +7,7 @@ Configstruct
 [![Coverage Status](https://img.shields.io/coveralls/mose/configstruct.svg)](https://coveralls.io/r/mose/configstruct?branch=master)
 [![Dependency Status](https://img.shields.io/gemnasium/mose/configstruct.svg)](https://gemnasium.com/mose/configstruct)
 [![Code Climate](https://img.shields.io/codeclimate/github/mose/configstruct.svg)](https://codeclimate.com/github/mose/configstruct)
+[![Inch](https://inch-ci.org/github/mose/configstruct.svg)](https://inch-ci.org/github/mose/configstruct)
 
 ----
 
