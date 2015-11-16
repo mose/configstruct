@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/mose/configstruct"
   spec.license       = "MIT"
 
-  spec.files         = ['lib/configstruct.rb']
+  spec.files         = ['lib/configstruct.rb','README.md','CHANGELOG.md','LICENSE.txt']
   spec.executables   = []
   spec.test_files    = ['spec/spec_helper.rb','spec/lib/configstruct_spec.rb','/spec/files/config.yml']
   spec.require_paths = ['lib']
