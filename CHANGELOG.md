@@ -1,14 +1,15 @@
 ConfigStruct Changelog
 =======================
 
-v0.0.5 - wip
+v0.1.0 - 2015-11-16
 ----------------------
 - fix tests for rspec3
 - add some code documentation
 
 v0.0.4 - 2014-08-19
 -----------------------
-- add a fourth params at init for conductig the behaviour of overriding values from options provided
+- add a fourth params at init for conducting the behaviour 
+  of overriding values from options provided
 
 v0.0.3 - 2014-06-01
 -----------------------

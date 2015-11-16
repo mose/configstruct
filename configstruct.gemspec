@@ -12,9 +12,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/mose/configstruct"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0")
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(/^spec\//)
+  spec.files         = ['lib/configstruct.rb']
+  spec.executables   = []
+  spec.test_files    = ['spec/spec_helper.rb','spec/lib/configstruct_spec.rb','/spec/files/config.yml']
   spec.require_paths = ['lib']
 
   spec.add_development_dependency "bundler", "~> 1.6"
