@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = ['lib/configstruct.rb','README.md','CHANGELOG.md','LICENSE.txt']
   spec.executables   = []
-  spec.test_files    = ['spec/spec_helper.rb','spec/lib/configstruct_spec.rb','/spec/files/config.yml']
+  spec.test_files    = ['spec/spec_helper.rb','spec/lib/configstruct_spec.rb','spec/files/config.yml']
   spec.require_paths = ['lib']
 
   spec.add_development_dependency "bundler", "~> 1.6"
